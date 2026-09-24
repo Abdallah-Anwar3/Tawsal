@@ -1,0 +1,1605 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>موقع تواصل - دليلك الشامل</title>
+    <link rel="shortcut icon" href="images/logo.svg" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css"
+    />
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+  <body class="bg-light">
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top shadow-sm"
+    >
+      <div class="container">
+        <a
+          class="navbar-brand fw-bold"
+          href="#"
+          onclick="
+            switchPage('home');
+            return false;
+          "
+        >
+          <img
+            src="images/logo.svg"
+            alt="شعار تواصل"
+            class="rounded-circle bg-white p-1 ms-2"
+            style="width: 55px; height: 55px"
+          />
+          تواصل
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link active fw-bold"
+                href="#"
+                id="nav-home"
+                onclick="
+                  switchPage('home');
+                  return false;
+                "
+                >الرئيسية</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="#"
+                id="nav-parents"
+                onclick="
+                  switchPage('parents');
+                  return false;
+                "
+                >التوجيه الأسري</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="#"
+                id="nav-kids"
+                onclick="
+                  switchPage('kids');
+                  return false;
+                "
+                >تعليم الأطفال</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="#"
+                id="nav-centers"
+                onclick="
+                  switchPage('centers');
+                  return false;
+                "
+                >دليل المراكز</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div id="page-home">
+      <main class="container my-5">
+        <section id="home-section">
+          <div
+            class="row align-items-center mb-5 bg-white p-4 rounded-4 shadow-sm"
+          >
+            <div class="col-md-6 text-center text-md-end mb-4 mb-md-0">
+              <h1 class="display-5 fw-bold text-primary mb-3">نسمعك بقلوبنا</h1>
+              <p class="lead text-secondary">
+                منصة "تواصل" هي دليلك الشامل لدعم ذوي الإعاقة السمعية. نقدم
+                التوعية، تعليم لغة الإشارة، وأفضل مراكز التخاطب لمستقبل أكثر
+                إشراقاً.
+              </p>
+              <button
+                class="btn btn-primary btn-lg mt-3 px-4 rounded-pill"
+                onclick="switchPage('parents')"
+              >
+                ابدأ التصفح
+              </button>
+            </div>
+            <div class="col-md-6 col-lg-5">
+              <div
+                class="card video-card h-100 border-0 shadow-sm rounded-4 overflow-hidden"
+                onclick="openVideoModal('فريق تواصل', 'Videos/all.mp4')"
+              >
+                <div class="video-thumbnail-container">
+                  <img
+                    src="images/logo.png"
+                    class="card-img-top w-100"
+                    alt="فريق تواصل"
+                  />
+                  <div class="play-overlay">▶</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row g-4 mb-5">
+            <div class="col-lg-12">
+              <div
+                class="p-4 bg-white rounded-4 shadow-sm border-start border-primary border-5"
+              >
+                <h2 class="h4 fw-bold text-dark mb-3">عن الموقع</h2>
+                <p class="text-secondary mb-0 fs-5">
+                  موقع خدمي يهدف لمد جسور التواصل بين ذوي الإعاقة السمعية
+                  والمجتمع. ستجد هنا فيديوهات إرشادية للآباء، ومحتوى ترفيهي
+                  تعليمي للأطفال، وقاعدة بيانات مخصصة لأشهر المراكز في جميع
+                  المحافظات.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="card h-100 border-0 shadow-sm rounded-4">
+                <div
+                  class="card-header bg-primary text-white fw-bold rounded-top-4"
+                >
+                  تعليمات هامة
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item py-3">
+                    استخدم شريط التنقل العلوي للوصول للخدمات.
+                  </li>
+                  <li class="list-group-item py-3">
+                    فيديوهات الأطفال مصممة لتعمل بمجرد الضغط عليها.
+                  </li>
+                  <li class="list-group-item py-3">
+                    يمكنك البحث عن أقرب مركز لك من خانة "دليل المراكز".
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="card h-100 border-0 shadow-sm rounded-4">
+                <div
+                  class="card-header bg-info text-white fw-bold rounded-top-4"
+                >
+                  معلومات عن الإعاقة السمعية
+                </div>
+                <div class="card-body">
+                  <p class="card-text text-secondary">
+                    <strong>التدخل المبكر:</strong> اكتشاف ضعف السمع مبكراً
+                    واستخدام المعينات السمعية يسهل عملية تطور النطق.
+                  </p>
+                  <p class="card-text text-secondary">
+                    <strong>لغة الإشارة:</strong> تختلف لغة الإشارة من بلد لآخر،
+                    وليست لغة عالمية واحدة كما يعتقد البعض.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <header class="text-center mb-5 p-4 bg-white rounded-4 shadow-sm">
+            <h1 class="display-5 fw-bold text-primary mb-3">
+              إرشادات وتوعية لأولياء الأمور
+            </h1>
+            <p class="lead text-secondary w-75 mx-auto">
+              مجموعة من الفيديوهات الإرشادية لتعليم لغة الإشارة، وطرق التعامل
+              الأمثل لدعم أطفالكم ذوي الإعاقة السمعية.
+            </p>
+          </header>
+
+          <div class="row g-4 mt-4">
+            <div class="col-md-6 col-lg-4">
+              <div
+                class="card video-card h-100 border-0 shadow-sm rounded-4 overflow-hidden"
+                onclick="
+                  openVideoModal('ما هي الإعاقة السمعية؟ 👂', 'Videos/h_1.mp4')
+                "
+              >
+                <div class="video-thumbnail-container">
+                  <img
+                    src="images/logo.png"
+                    class="card-img-top w-100"
+                    alt="الإعاقة السمعية"
+                  />
+                  <div class="play-overlay">▶</div>
+                </div>
+                <div class="card-body text-center">
+                  <h5 class="card-title fw-bold text-dark mb-2">
+                    ما هي الإعاقة السمعية؟
+                  </h5>
+                  <p class="card-text text-secondary small">
+                    مفهوم الإعاقة السمعية ببساطة، وكيف تؤثر على تواصل الطفل مع
+                    العالم من حوله.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+              <div
+                class="card video-card h-100 border-0 shadow-sm rounded-4 overflow-hidden"
+                onclick="
+                  openVideoModal(
+                    'الإعاقة ليست نهاية العالم 🌅',
+                    'Videos/h_2.mp4',
+                  )
+                "
+              >
+                <div class="video-thumbnail-container">
+                  <img
+                    src="images/logo.png"
+                    class="card-img-top w-100"
+                    alt="الإعاقة ليست نهاية العالم"
+                  />
+                  <div class="play-overlay">▶</div>
+                </div>
+                <div class="card-body text-center">
+                  <h5 class="card-title fw-bold text-dark mb-2">
+                    الإعاقة ليست نهاية العالم
+                  </h5>
+                  <p class="card-text text-secondary small">
+                    رسالة أمل وطمأنينة.. كيف يمكن لطفلك أن يعيش حياة طبيعية
+                    ومليئة بالنجاحات المبهرة.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+              <div
+                class="card video-card h-100 border-0 shadow-sm rounded-4 overflow-hidden"
+                onclick="
+                  openVideoModal('اختلاف وليس ضعفاً 💪', 'Videos/h_3.mp4')
+                "
+              >
+                <div class="video-thumbnail-container">
+                  <img
+                    src="images/logo.png"
+                    class="card-img-top w-100"
+                    alt="اختلاف وليس ضعفاً"
+                  />
+                  <div class="play-overlay">▶</div>
+                </div>
+                <div class="card-body text-center">
+                  <h5 class="card-title fw-bold text-dark mb-2">
+                    اختلاف وليس ضعفاً
+                  </h5>
+                  <p class="card-text text-secondary small">
+                    تغيير النظرة المجتمعية: الإعاقة السمعية مجرد طريقة مختلفة
+                    للتواصل وليست عجزاً أبداً.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+              <div
+                class="card video-card h-100 border-0 shadow-sm rounded-4 overflow-hidden"
+                onclick="
+                  openVideoModal(
+                    'التدخل المبكر: الخطوة الأهم ⏱️',
+                    'Videos/h_4.mp4',
+                  )
+                "
+              >
+                <div class="video-thumbnail-container">
+                  <img
+                    src="images/logo.png"
+                    class="card-img-top w-100"
+                    alt="التدخل المبكر"
+                  />
+                  <div class="play-overlay">▶</div>
+                </div>
+                <div class="card-body text-center">
+                  <h5 class="card-title fw-bold text-dark mb-2">
+                    التدخل المبكر: الخطوة الأهم
+                  </h5>
+                  <p class="card-text text-secondary small">
+                    لماذا يعتبر التدخل في السنوات الأولى هو المفتاح السحري لتطور
+                    لغة طفلك؟
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+              <div
+                class="card video-card h-100 border-0 shadow-sm rounded-4 overflow-hidden"
+                onclick="
+                  openVideoModal('درجات الفقد السمعي 📊', 'Videos/h_6.mp4')
+                "
+              >
+                <div class="video-thumbnail-container">
+                  <img
+                    src="images/logo.png"
+                    class="card-img-top w-100"
+                    alt="الفقد السمعي"
+                  />
+                  <div class="play-overlay">▶</div>
+                </div>
+                <div class="card-body text-center">
+                  <h5 class="card-title fw-bold text-dark mb-2">
+                    درجات الفقد السمعي
+                  </h5>
+                  <p class="card-text text-secondary small">
+                    تعرف على المستويات المختلفة لضعف السمع وكيف نحدد طرق التدخل
+                    المناسبة لكل درجة.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+              <div
+                class="card video-card h-100 border-0 shadow-sm rounded-4 overflow-hidden"
+                onclick="
+                  openVideoModal('علامات الإنذار المبكر 🚨', 'Videos/h_7.mp4')
+                "
+              >
+                <div class="video-thumbnail-container">
+                  <img
+                    src="images/logo.png"
+                    class="card-img-top w-100"
+                    alt="علامات المشاكل"
+                  />
+                  <div class="play-overlay">▶</div>
+                </div>
+                <div class="card-body text-center">
+                  <h5 class="card-title fw-bold text-dark mb-2">
+                    علامات الإنذار المبكر
+                  </h5>
+                  <p class="card-text text-secondary small">
+                    كيف تكتشفين وجود مشكلة في السمع أو التواصل لدى طفلك في شهوره
+                    الأولى.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+              <div
+                class="card video-card h-100 border-0 shadow-sm rounded-4 overflow-hidden"
+                onclick="
+                  openVideoModal('تشجيع طفلك على التفاعل 🤝', 'Videos/h_8.mp4')
+                "
+              >
+                <div class="video-thumbnail-container">
+                  <img
+                    src="images/logo.png"
+                    class="card-img-top w-100"
+                    alt="التفاعل"
+                  />
+                  <div class="play-overlay">▶</div>
+                </div>
+                <div class="card-body text-center">
+                  <h5 class="card-title fw-bold text-dark mb-2">
+                    تشجيع طفلك على التفاعل
+                  </h5>
+                  <p class="card-text text-secondary small">
+                    خطوات عملية لمساعدة طفلك الأصم على اللعب والاندماج مع
+                    الأطفال الآخرين بثقة.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+              <div
+                class="card video-card h-100 border-0 shadow-sm rounded-4 overflow-hidden"
+                onclick="
+                  openVideoModal('من حق الجميع أن يُفهم 💖', 'Videos/h_9.mp4')
+                "
+              >
+                <div class="video-thumbnail-container">
+                  <img
+                    src="images/logo.png"
+                    class="card-img-top w-100"
+                    alt="من حق الجميع أن يفهم"
+                  />
+                  <div class="play-overlay">▶</div>
+                </div>
+                <div class="card-body text-center">
+                  <h5 class="card-title fw-bold text-dark mb-2">
+                    من حق الجميع أن يُفهم
+                  </h5>
+                  <p class="card-text text-secondary small">
+                    أهمية لغة الإشارة والتواصل البصري في خلق بيئة تتقبل وتفهم
+                    احتياجات طفلك.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+              <div
+                class="card video-card h-100 border-0 shadow-sm rounded-4 overflow-hidden"
+                onclick="
+                  openVideoModal(
+                    'التعامل مع إحباط الآباء 🌧️',
+                    'Videos/h_10.mp4',
+                  )
+                "
+              >
+                <div class="video-thumbnail-container">
+                  <img
+                    src="images/logo.png"
+                    class="card-img-top w-100"
+                    alt="إحباط أولياء الأمور"
+                  />
+                  <div class="play-overlay">▶</div>
+                </div>
+                <div class="card-body text-center">
+                  <h5 class="card-title fw-bold text-dark mb-2">
+                    التعامل مع إحباط الآباء
+                  </h5>
+                  <p class="card-text text-secondary small">
+                    الشعور بالتعب طبيعي.. كيف تتجاوزين هذه اللحظات الصعبة
+                    وتستعيدين طاقتك من جديد؟
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+              <div
+                class="card video-card h-100 border-0 shadow-sm rounded-4 overflow-hidden"
+                onclick="
+                  openVideoModal('فخ مقارنة الأطفال 🚫', 'Videos/h_11.mp4')
+                "
+              >
+                <div class="video-thumbnail-container">
+                  <img
+                    src="images/logo.png"
+                    class="card-img-top w-100"
+                    alt="مقارنة الأطفال"
+                  />
+                  <div class="play-overlay">▶</div>
+                </div>
+                <div class="card-body text-center">
+                  <h5 class="card-title fw-bold text-dark mb-2">
+                    فخ مقارنة الأطفال
+                  </h5>
+                  <p class="card-text text-secondary small">
+                    لماذا يجب أن تتوقفي فوراً عن مقارنة تطور طفلك بالآخرين؟ ركزي
+                    على تقدمه الخاص.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+              <div
+                class="card video-card h-100 border-0 shadow-sm rounded-4 overflow-hidden"
+                onclick="
+                  openVideoModal('دليلك لجلسات التخاطب 🏥', 'Videos/h_12.mp4')
+                "
+              >
+                <div class="video-thumbnail-container">
+                  <img
+                    src="images/logo.png"
+                    class="card-img-top w-100"
+                    alt="جلسات التخاطب"
+                  />
+                  <div class="play-overlay">▶</div>
+                </div>
+                <div class="card-body text-center">
+                  <h5 class="card-title fw-bold text-dark mb-2">
+                    دليلك لجلسات التخاطب
+                  </h5>
+                  <p class="card-text text-secondary small">
+                    ما الذي يحدث داخل جلسة التخاطب؟ وكيف يكون دور الأسرة مكملاً
+                    لعمل الأخصائي.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <div id="page-parents" style="display: none">
+      <main class="container my-5">
+        <div class="mb-5">
+          <header class="text-center mb-5 p-4 bg-white rounded-4 shadow-sm">
+            <h1 class="display-5 fw-bold text-primary mb-3">
+              أحدث المقالات والتوعية
+            </h1>
+            <p class="lead text-secondary w-75 mx-auto">
+              مجموعة من المقالات الإرشادية التي تخص اصحاب الإعاقة وحقوقهم وكيفية
+              التدخل المبكر.
+            </p>
+          </header>
+
+          <div class="row g-4">
+            <div class="col-md-4">
+              <div
+                class="card article-card h-100 border-0 shadow-sm rounded-4 overflow-hidden"
+              >
+                <img
+                  src="images/p1.jpg"
+                  class="card-img-top"
+                  alt="القوانين الدولية الخاصة بذوي الإعاقة"
+                  onclick="
+                    showArticle(
+                      'القوانين الدولية والمحلية الخاصة بذوي الإعاقة',
+                      `<h4 class='text-primary mb-3'>أولاً: القوانين الدولية الخاصة بذوي الإعاقة</h4><strong>1️⃣ الإعلان العالمي لحقوق الإنسان – 1948</strong><br>أكد على: (الحق في التعليم - الحق في الرعاية الصحية - الحق في العمل - الحق في المساواة وعدم التمييز)<br><br><strong>2️⃣ إعلان حقوق المعاقين – 1975 (صدر عن الأمم المتحدة)</strong><br>أكد على: (حق المعاق في الرعاية - حقه في التعليم والتأهيل - حقه في العمل - حقه في الحياة الكريمة والاندماج المجتمعي)<br><br><strong>3️⃣ السنة الدولية للمعاقين – 1981 (أعلنتها الأمم المتحدة)</strong><br>بهدف: (تحقيق المساواة - تعزيز المشاركة المجتمعية - تحسين الخدمات المقدمة)<br><br><strong>4️⃣ برنامج العمل العالمي للمعاقين – 1982</strong><br>ركز على: (الوقاية - التأهيل - تكافؤ الفرص)<br><br><strong>5️⃣ اتفاقية حقوق الطفل – 1989</strong><br>أكدت المادة (23) على حق الطفل المعاق في: (التعليم - الرعاية الصحية - الحياة الكريمة - المشاركة المجتمعية)<br><br><strong>6️⃣ القواعد الموحدة لتحقيق تكافؤ الفرص للمعاقين – 1993</strong><br>هدفت إلى: (إزالة التمييز - ضمان المشاركة المجتمعية - تحسين فرص التعليم والعمل)<br><br><strong>7️⃣ اتفاقية حقوق الأشخاص ذوي الإعاقة – 2006 (أهم اتفاقية دولية)</strong><br>أكدت على: (الحق في التعليم الدامج - الحق في العمل - الحق في الرعاية الصحية - الحق في الاستقلالية - الحق في المشاركة المجتمعية)<br><hr><h4 class='text-primary mb-3'>ثانياً: القوانين في مصر الخاصة بذوي الإعاقة 🇪🇬</h4><strong>1️⃣ قانون تأهيل المعاقين رقم 39 لسنة 1975</strong><br>ينص على: (حق التأهيل المهني - توفير فرص العمل - تقديم خدمات الرعاية)<br><br><strong>2️⃣ قانون الطفل رقم 12 لسنة 1996</strong><br>أكد على: (حق الطفل المعاق في التعليم - الرعاية الصحية - الحماية الاجتماعية)<br><br><strong>3️⃣ تعديل قانون الطفل رقم 126 لسنة 2008</strong><br>أضاف: (دمج الأطفال ذوي الإعاقة في التعليم - توفير خدمات تأهيلية)<br><br><strong>4️⃣ الدستور المصري 2014</strong><br>أكد على: (عدم التمييز - حق التعليم - حق الرعاية الصحية - المشاركة في المجتمع)<br><br><strong>5️⃣ قانون حقوق الأشخاص ذوي الإعاقة رقم 10 لسنة 2018 ⭐ (الأهم حالياً)</strong><br>نص على: <ul><li>الحق في التعليم الدامج والرعاية الصحية</li><li>الحق في العمل (نسبة 5%)</li><li>الحق في الإسكان والمشاركة السياسية</li><li>الحماية من التمييز وتوفير وسائل الإتاحة</li><li>الإعفاءات الجمركية للأجهزة التعويضية</li></ul><hr><h4 class='text-primary mb-3'>ثالثاً: قوانين مرتبطة بالتعليم</h4><strong>قانون التعليم (وتعديلاته)</strong> أكد على: (دمج ذوي الإعاقة في المدارس - توفير خدمات التربية الخاصة - استخدام الوسائل التعليمية المناسبة)<br><hr><h4 class='text-primary mb-3'>رابعاً: تواريخ مهمة عالمياً</h4><ul><li><strong>3 ديسمبر:</strong> اليوم العالمي للأشخاص ذوي الإعاقة</li><li><strong>21 مارس:</strong> اليوم العالمي لمتلازمة داون</li><li><strong>2 أبريل:</strong> اليوم العالمي للتوحد</li></ul>`,
+                    )
+                  "
+                />
+                <div class="card-body">
+                  <h5
+                    class="card-title fw-bold text-dark clickable-title"
+                    onclick="
+                      showArticle(
+                        'القوانين الدولية والمحلية الخاصة بذوي الإعاقة',
+                        `<h4 class='text-primary mb-3'>أولاً: القوانين الدولية الخاصة بذوي الإعاقة</h4><strong>1️⃣ الإعلان العالمي لحقوق الإنسان – 1948</strong><br>أكد على: (الحق في التعليم - الحق في الرعاية الصحية - الحق في العمل - الحق في المساواة وعدم التمييز)<br><br><strong>2️⃣ إعلان حقوق المعاقين – 1975 (صدر عن الأمم المتحدة)</strong><br>أكد على: (حق المعاق في الرعاية - حقه في التعليم والتأهيل - حقه في العمل - حقه في الحياة الكريمة والاندماج المجتمعي)<br><br><strong>3️⃣ السنة الدولية للمعاقين – 1981 (أعلنتها الأمم المتحدة)</strong><br>بهدف: (تحقيق المساواة - تعزيز المشاركة المجتمعية - تحسين الخدمات المقدمة)<br><br><strong>4️⃣ برنامج العمل العالمي للمعاقين – 1982</strong><br>ركز على: (الوقاية - التأهيل - تكافؤ الفرص)<br><br><strong>5️⃣ اتفاقية حقوق الطفل – 1989</strong><br>أكدت المادة (23) على حق الطفل المعاق في: (التعليم - الرعاية الصحية - الحياة الكريمة - المشاركة المجتمعية)<br><br><strong>6️⃣ القواعد الموحدة لتحقيق تكافؤ الفرص للمعاقين – 1993</strong><br>هدفت إلى: (إزالة التمييز - ضمان المشاركة المجتمعية - تحسين فرص التعليم والعمل)<br><br><strong>7️⃣ اتفاقية حقوق الأشخاص ذوي الإعاقة – 2006 (أهم اتفاقية دولية)</strong><br>أكدت على: (الحق في التعليم الدامج - الحق في العمل - الحق في الرعاية الصحية - الحق في الاستقلالية - الحق في المشاركة المجتمعية)<br><hr><h4 class='text-primary mb-3'>ثانياً: القوانين في مصر الخاصة بذوي الإعاقة 🇪🇬</h4><strong>1️⃣ قانون تأهيل المعاقين رقم 39 لسنة 1975</strong><br>ينص على: (حق التأهيل المهني - توفير فرص العمل - تقديم خدمات الرعاية)<br><br><strong>2️⃣ قانون الطفل رقم 12 لسنة 1996</strong><br>أكد على: (حق الطفل المعاق في التعليم - الرعاية الصحية - الحماية الاجتماعية)<br><br><strong>3️⃣ تعديل قانون الطفل رقم 126 لسنة 2008</strong><br>أضاف: (دمج الأطفال ذوي الإعاقة في التعليم - توفير خدمات تأهيلية)<br><br><strong>4️⃣ الدستور المصري 2014</strong><br>أكد على: (عدم التمييز - حق التعليم - حق الرعاية الصحية - المشاركة في المجتمع)<br><br><strong>5️⃣ قانون حقوق الأشخاص ذوي الإعاقة رقم 10 لسنة 2018 ⭐ (الأهم حالياً)</strong><br>نص على: <ul><li>الحق في التعليم الدامج والرعاية الصحية</li><li>الحق في العمل (نسبة 5%)</li><li>الحق في الإسكان والمشاركة السياسية</li><li>الحماية من التمييز وتوفير وسائل الإتاحة</li><li>الإعفاءات الجمركية للأجهزة التعويضية</li></ul><hr><h4 class='text-primary mb-3'>ثالثاً: قوانين مرتبطة بالتعليم</h4><strong>قانون التعليم (وتعديلاته)</strong> أكد على: (دمج ذوي الإعاقة في المدارس - توفير خدمات التربية الخاصة - استخدام الوسائل التعليمية المناسبة)<br><hr><h4 class='text-primary mb-3'>رابعاً: تواريخ مهمة عالمياً</h4><ul><li><strong>3 ديسمبر:</strong> اليوم العالمي للأشخاص ذوي الإعاقة</li><li><strong>21 مارس:</strong> اليوم العالمي لمتلازمة داون</li><li><strong>2 أبريل:</strong> اليوم العالمي للتوحد</li></ul>`,
+                      )
+                    "
+                  >
+                    القوانين الدولية والمحلية الخاصة بذوي الإعاقة
+                  </h5>
+                  <p class="card-text text-secondary">
+                    تعرف على أهم الاتفاقيات الدولية والقوانين المصرية التي تضمن
+                    وتكفل حقوق الأشخاص ذوي الإعاقة في التعليم والعمل والصحة...
+                  </p>
+                </div>
+                <div class="card-footer bg-white border-0 pb-3 pt-0">
+                  <button
+                    onclick="document.querySelector('.clickable-title').click()"
+                    class="btn btn-outline-primary btn-sm w-100 rounded-pill"
+                  >
+                    اقرأ المزيد
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div
+                class="card article-card h-100 border-0 shadow-sm rounded-4 overflow-hidden"
+              >
+                <img
+                  src="images/p2.jpg"
+                  class="card-img-top"
+                  alt="المواد الدستورية المرتبطة بذوي الإعاقة"
+                  onclick="
+                    showArticle(
+                      'المواد الدستورية المرتبطة بذوي الإعاقة',
+                      `<h4 class='text-primary mb-3'>القوانين الدستورية الخاصة بذوي الإعاقة في الدستور المصري 2014</h4><strong>🔹 المادة (53)</strong><br><em>تنص على:</em> &quot;المواطنون لدى القانون سواء، وهم متساوون في الحقوق والحريات والواجبات العامة، لا تمييز بينهم بسبب الإعاقة.&quot;<br><span class='text-success'>📌 أهميتها:</span> تؤكد مبدأ عدم التمييز بسبب الإعاقة، وتعتبر أساس الحماية القانونية لذوي الإعاقة.<br><br><strong>🔹 المادة (80)</strong><br><em>تنص على:</em> &quot;لكل طفل الحق في التعليم والرعاية الصحية والغذاء والمسكن الآمن... وتلتزم الدولة برعاية الأطفال ذوي الإعاقة وتأهيلهم ودمجهم في المجتمع.&quot;<br><span class='text-success'>📌 أهميتها:</span> تضمن رعاية الأطفال ذوي الإعاقة وتؤكد حق الدمج المجتمعي.<br><br><strong>🔹 المادة (81) ⭐ (الأهم)</strong><br><em>تنص على:</em> &quot;تلتزم الدولة بضمان حقوق الأشخاص ذوي الإعاقة والأقزام صحياً واقتصادياً واجتماعياً وثقافياً وترفيهياً ورياضياً وتعليمياً، وتوفير فرص العمل لهم، وتهيئة المرافق العامة والبيئة المحيطة لهم، وممارستهم لجميع الحقوق السياسية، ودمجهم مع غيرهم من المواطنين.&quot;<br><span class='text-success'>📌 أهميتها:</span> ضمان شامل لكل الحقوق (التعليم - العمل - الدمج - المشاركة السياسية - الإتاحة البيئية).<br><br><strong>🔹 المادة (214)</strong><br><em>تنص على:</em> &quot;إنشاء المجلس القومي للأشخاص ذوي الإعاقة.&quot;<br><span class='text-success'>📌 أهميتها:</span> حماية حقوقهم ومتابعة تنفيذ السياسات الخاصة بهم.<br><br><strong>🔹 المادة (244)</strong><br><em>تنص على:</em> &quot;تمثيل ذوي الإعاقة تمثيلاً مناسباً في المجالس النيابية.&quot;<br><span class='text-success'>📌 أهميتها:</span> ضمان المشاركة السياسية.`,
+                    )
+                  "
+                />
+                <div class="card-body">
+                  <h5
+                    class="card-title fw-bold text-dark clickable-title"
+                    onclick="
+                      showArticle(
+                        'المواد الدستورية المرتبطة بذوي الإعاقة',
+                        `<h4 class='text-primary mb-3'>القوانين الدستورية الخاصة بذوي الإعاقة في الدستور المصري 2014</h4><strong>🔹 المادة (53)</strong><br><em>تنص على:</em> &quot;المواطنون لدى القانون سواء، وهم متساوون في الحقوق والحريات والواجبات العامة، لا تمييز بينهم بسبب الإعاقة.&quot;<br><span class='text-success'>📌 أهميتها:</span> تؤكد مبدأ عدم التمييز بسبب الإعاقة، وتعتبر أساس الحماية القانونية لذوي الإعاقة.<br><br><strong>🔹 المادة (80)</strong><br><em>تنص على:</em> &quot;لكل طفل الحق في التعليم والرعاية الصحية والغذاء والمسكن الآمن... وتلتزم الدولة برعاية الأطفال ذوي الإعاقة وتأهيلهم ودمجهم في المجتمع.&quot;<br><span class='text-success'>📌 أهميتها:</span> تضمن رعاية الأطفال ذوي الإعاقة وتؤكد حق الدمج المجتمعي.<br><br><strong>🔹 المادة (81) ⭐ (الأهم)</strong><br><em>تنص على:</em> &quot;تلتزم الدولة بضمان حقوق الأشخاص ذوي الإعاقة والأقزام صحياً واقتصادياً واجتماعياً وثقافياً وترفيهياً ورياضياً وتعليمياً، وتوفير فرص العمل لهم، وتهيئة المرافق العامة والبيئة المحيطة لهم، وممارستهم لجميع الحقوق السياسية، ودمجهم مع غيرهم من المواطنين.&quot;<br><span class='text-success'>📌 أهميتها:</span> ضمان شامل لكل الحقوق (التعليم - العمل - الدمج - المشاركة السياسية - الإتاحة البيئية).<br><br><strong>🔹 المادة (214)</strong><br><em>تنص على:</em> &quot;إنشاء المجلس القومي للأشخاص ذوي الإعاقة.&quot;<br><span class='text-success'>📌 أهميتها:</span> حماية حقوقهم ومتابعة تنفيذ السياسات الخاصة بهم.<br><br><strong>🔹 المادة (244)</strong><br><em>تنص على:</em> &quot;تمثيل ذوي الإعاقة تمثيلاً مناسباً في المجالس النيابية.&quot;<br><span class='text-success'>📌 أهميتها:</span> ضمان المشاركة السياسية.`,
+                      )
+                    "
+                  >
+                    المواد الدستورية المرتبطة بذوي الإعاقة
+                  </h5>
+                  <p class="card-text text-secondary">
+                    قراءة تفصيلية في الدستور المصري لعام 2014 والمواد التي نصت
+                    صراحة على حقوق ذوي الإعاقة وحمايتهم...
+                  </p>
+                </div>
+                <div class="card-footer bg-white border-0 pb-3 pt-0">
+                  <button
+                    onclick="
+                      this.parentElement.previousElementSibling
+                        .querySelector('.clickable-title')
+                        .click()
+                    "
+                    class="btn btn-outline-primary btn-sm w-100 rounded-pill"
+                  >
+                    اقرأ المزيد
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div
+                class="card article-card h-100 border-0 shadow-sm rounded-4 overflow-hidden"
+              >
+                <img
+                  src="images/p3.jpg"
+                  class="card-img-top"
+                  alt="الإجراءات الوقائية"
+                  onclick="
+                    showArticle(
+                      'الإجراءات الوقائية للوالدين عند اكتشاف إعاقة سمعية',
+                      `<h4 class='text-primary mb-3'>ملخص تنفيذي: ماذا يفعل الوالدان فوراً؟</h4><ul><li><strong>تهدئة النفس والتقبل العاطفي:</strong> الشعور بالصدمة طبيعي جداً. الوصول إلى استشارة نفسية أو مجموعات دعم سيكون مفيداً.</li><li><strong>التأكّد من التشخيص الطبي:</strong> طلب إحالة لطبيب أنف وأذن وحنجرة (ENT) وأخصائي سمعيات لإجراء فحوصات شاملة.</li><li><strong>البدء الفوري بالتدخل المبكر:</strong> كلما بدأ التدخل قبل عمر 6 أشهر كانت نتائج اللغة والتطور أفضل.</li><li><strong>جمع معلومات واضحة:</strong> عن نوع ودرجة فقد السمع، والخيارات العلاجية المتاحة.</li></ul><hr><h4 class='text-primary mb-3'>الخيارات الطبية والتقنية (ماذا يُتاح عادة؟)</h4><ul><li><strong>علاج الأسباب طبياً:</strong> مثل علاج التهابات الأذن الوسطى.</li><li><strong>أجهزة السمع (Hearing Aids):</strong> تلزم ضبطاً احترافياً ومتابعة دورية.</li><li><strong>زراعة القوقعة (Cochlear Implant):</strong> خيار مُمتاز لفقدان السمع العميق.</li></ul><hr><h4 class='text-primary mb-3'>التدخل المبكر: لماذا وكيف؟</h4><strong>مبدأ (1 - 3 - 6):</strong> فحص قبل شهر، تشخيص مؤكد قبل 3 أشهر، بدء التدخل قبل 6 أشهر.<br><strong>التركيز على الأسرة:</strong> أفضل الممارسات تؤكد أن التدخل يجب أن يركز على تدريب الوالدين لأنهم المصدر الرئيسي للغة الطفل.<br><br><h4 class='text-primary mb-3'>دور الوالدين اليومي في المنزل</h4><ul><li><strong>زيادة التعرض للغة:</strong> تحدثوا كثيراً مع الطفل وصفوا الأنشطة اليومية.</li><li><strong>استخدام الأجهزة باستمرار:</strong> الالتزام بارتداء السماعة أو القوقعة.</li><li><strong>تهيئة البيئة:</strong> تقليل الضجيج (إغلاق التلفزيون مثلاً عند التحدث).</li><li><strong>اللعب التفاعلي:</strong> الغناء، قراءة الكتب، وألعاب التظاهر.</li></ul><hr><h4 class='text-primary mb-3'>الوقاية من تدهور السمع</h4><ul><li><strong>أثناء الحمل:</strong> تجنب التعرض للعدوى، والتغذية السليمة.</li><li><strong>التطعيمات:</strong> التأكد من تلقي تطعيمات الحصبة والنكاف.</li><li><strong>الأدوية:</strong> تجنب الأدوية السامة للأذن (Ototoxic) دون إشراف طبي.</li><li><strong>حماية الأذن:</strong> تجنب الضوضاء العالية.</li></ul>`,
+                    )
+                  "
+                />
+                <div class="card-body">
+                  <h5
+                    class="card-title fw-bold text-dark clickable-title"
+                    onclick="
+                      showArticle(
+                        'الإجراءات الوقائية للوالدين عند اكتشاف إعاقة سمعية',
+                        `<h4 class='text-primary mb-3'>ملخص تنفيذي: ماذا يفعل الوالدان فوراً؟</h4><ul><li><strong>تهدئة النفس والتقبل العاطفي:</strong> الشعور بالصدمة طبيعي جداً. الوصول إلى استشارة نفسية أو مجموعات دعم سيكون مفيداً.</li><li><strong>التأكّد من التشخيص الطبي:</strong> طلب إحالة لطبيب أنف وأذن وحنجرة (ENT) وأخصائي سمعيات لإجراء فحوصات شاملة.</li><li><strong>البدء الفوري بالتدخل المبكر:</strong> كلما بدأ التدخل قبل عمر 6 أشهر كانت نتائج اللغة والتطور أفضل.</li><li><strong>جمع معلومات واضحة:</strong> عن نوع ودرجة فقد السمع، والخيارات العلاجية المتاحة.</li></ul><hr><h4 class='text-primary mb-3'>الخيارات الطبية والتقنية (ماذا يُتاح عادة؟)</h4><ul><li><strong>علاج الأسباب طبياً:</strong> مثل علاج التهابات الأذن الوسطى.</li><li><strong>أجهزة السمع (Hearing Aids):</strong> تلزم ضبطاً احترافياً ومتابعة دورية.</li><li><strong>زراعة القوقعة (Cochlear Implant):</strong> خيار مُمتاز لفقدان السمع العميق.</li></ul><hr><h4 class='text-primary mb-3'>التدخل المبكر: لماذا وكيف؟</h4><strong>مبدأ (1 - 3 - 6):</strong> فحص قبل شهر، تشخيص مؤكد قبل 3 أشهر، بدء التدخل قبل 6 أشهر.<br><strong>التركيز على الأسرة:</strong> أفضل الممارسات تؤكد أن التدخل يجب أن يركز على تدريب الوالدين لأنهم المصدر الرئيسي للغة الطفل.<br><br><h4 class='text-primary mb-3'>دور الوالدين اليومي في المنزل</h4><ul><li><strong>زيادة التعرض للغة:</strong> تحدثوا كثيراً مع الطفل وصفوا الأنشطة اليومية.</li><li><strong>استخدام الأجهزة باستمرار:</strong> الالتزام بارتداء السماعة أو القوقعة.</li><li><strong>تهيئة البيئة:</strong> تقليل الضجيج (إغلاق التلفزيون مثلاً عند التحدث).</li><li><strong>اللعب التفاعلي:</strong> الغناء، قراءة الكتب، وألعاب التظاهر.</li></ul><hr><h4 class='text-primary mb-3'>الوقاية من تدهور السمع</h4><ul><li><strong>أثناء الحمل:</strong> تجنب التعرض للعدوى، والتغذية السليمة.</li><li><strong>التطعيمات:</strong> التأكد من تلقي تطعيمات الحصبة والنكاف.</li><li><strong>الأدوية:</strong> تجنب الأدوية السامة للأذن (Ototoxic) دون إشراف طبي.</li><li><strong>حماية الأذن:</strong> تجنب الضوضاء العالية.</li></ul>`,
+                      )
+                    "
+                  >
+                    الإجراءات الوقائية عند اكتشاف الإعاقة
+                  </h5>
+                  <p class="card-text text-secondary">
+                    خطوات عملية فورية للوالدين تبدأ من الدعم النفسي، وصولاً إلى
+                    خيارات التدخل المبكر والتعامل اليومي مع الطفل...
+                  </p>
+                </div>
+                <div class="card-footer bg-white border-0 pb-3 pt-0">
+                  <button
+                    onclick="
+                      this.parentElement.previousElementSibling
+                        .querySelector('.clickable-title')
+                        .click()
+                    "
+                    class="btn btn-outline-primary btn-sm w-100 rounded-pill"
+                  >
+                    اقرأ المزيد
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div
+                class="card article-card h-100 border-0 shadow-sm rounded-4 overflow-hidden"
+              >
+                <img
+                  src="images/p4.jpg"
+                  class="card-img-top"
+                  alt="الكشف المبكر"
+                  onclick="
+                    showArticle(
+                      'الكشف المبكر عن الإعاقة السمعية لدى الأطفال',
+                      `<h4 class='text-primary mb-3'>ما هو الكشف المبكر ولماذا هو مهم؟</h4>هو منظومة استباقية لفحص جميع المواليد في الأسابيع الأولى من الولادة. <br><strong>أهميته:</strong> يساعد على النمو اللغوي، يسهل بدء العلاج والتأهيل في الوقت المناسب، ويقلل من المشكلات النفسية والسلوكية المرتبطة بصعوبة التواصل.<br><hr><h4 class='text-primary mb-3'>الفرق بين &quot;المسح&quot; و &quot;التشخيص&quot;</h4><ul><li><strong>المسح السمعي (Screening):</strong> اختبار مبدئي (مرور أو إعادة). فشل الطفل لا يعني بالضرورة أنه أصم (قد يكون هناك شمع أو سوائل).</li><li><strong>التشخيص الشامل (Diagnostic):</strong> فحوصات دقيقة تحدد درجة ونوع الضعف السمعي.</li></ul><hr><h4 class='text-primary mb-3'>مستويات ضعف السمع (بالديسيبل)</h4><ul><li><strong>بسيط (26 – 40 dB):</strong> صعوبة في سماع الهمس.</li><li><strong>متوسط (41 – 55 dB):</strong> صعوبة فهم الكلام العادي في الضوضاء.</li><li><strong>شديد (71 – 90 dB):</strong> لا يسمع إلا الأصوات العالية جداً.</li><li><strong>عميق (أكثر من 91 dB):</strong> يعتمد كلياً على الرؤية (زراعة القوقعة غالباً هي الحل).</li></ul><hr><h4 class='text-primary mb-3'>بروتوكول التشخيص والقاعدة الذهبية</h4>تعتمد الفحوصات الحديثة على التكنولوجيا مثل <strong>OAE</strong> (الموجات الانبعاثية) و <strong>ABR</strong> (استجابة جذع المخ).<br><br><strong>القاعدة الذهبية (1 - 3 - 6):</strong><ul><li><strong>عمر شهر:</strong> إجراء مسح سمعي.</li><li><strong>عمر 3 أشهر:</strong> تشخيص نهائي إذا فشل المسح.</li><li><strong>عمر 6 أشهر:</strong> البدء في التدخل (سماعات أو تأهيل).</li></ul><hr><h4 class='text-primary mb-3'>سبل الوقاية وتجنب المخاطر</h4><ul><li><strong>قبل الزواج:</strong> الفحص الوراثي (خصوصاً زواج الأقارب).</li><li><strong>أثناء الحمل:</strong> الامتناع عن الأدوية والمضادات الحيوية دون استشارة طبيب الأجنة.</li><li><strong>حماية أذن الطفل:</strong> عدم استخدام &quot;أعواد القطن&quot; إطلاقاً لتنظيف أذن الطفل.</li></ul><hr><h4 class='text-primary mb-3'>جهود الكشف المبكر في مصر 🇪🇬</h4>تم فحص أكثر من 9.7 مليون طفل ضمن المبادرات الرئاسية، مع تدريب الكوادر وتسجيل البيانات إلكترونياً وتوفير قوافل طبية بجميع المحافظات.`,
+                    )
+                  "
+                />
+                <div class="card-body">
+                  <h5
+                    class="card-title fw-bold text-dark clickable-title"
+                    onclick="
+                      showArticle(
+                        'الكشف المبكر عن الإعاقة السمعية لدى الأطفال',
+                        `<h4 class='text-primary mb-3'>ما هو الكشف المبكر ولماذا هو مهم؟</h4>هو منظومة استباقية لفحص جميع المواليد في الأسابيع الأولى من الولادة. <br><strong>أهميته:</strong> يساعد على النمو اللغوي، يسهل بدء العلاج والتأهيل في الوقت المناسب، ويقلل من المشكلات النفسية والسلوكية المرتبطة بصعوبة التواصل.<br><hr><h4 class='text-primary mb-3'>الفرق بين &quot;المسح&quot; و &quot;التشخيص&quot;</h4><ul><li><strong>المسح السمعي (Screening):</strong> اختبار مبدئي (مرور أو إعادة). فشل الطفل لا يعني بالضرورة أنه أصم (قد يكون هناك شمع أو سوائل).</li><li><strong>التشخيص الشامل (Diagnostic):</strong> فحوصات دقيقة تحدد درجة ونوع الضعف السمعي.</li></ul><hr><h4 class='text-primary mb-3'>مستويات ضعف السمع (بالديسيبل)</h4><ul><li><strong>بسيط (26 – 40 dB):</strong> صعوبة في سماع الهمس.</li><li><strong>متوسط (41 – 55 dB):</strong> صعوبة فهم الكلام العادي في الضوضاء.</li><li><strong>شديد (71 – 90 dB):</strong> لا يسمع إلا الأصوات العالية جداً.</li><li><strong>عميق (أكثر من 91 dB):</strong> يعتمد كلياً على الرؤية (زراعة القوقعة غالباً هي الحل).</li></ul><hr><h4 class='text-primary mb-3'>بروتوكول التشخيص والقاعدة الذهبية</h4>تعتمد الفحوصات الحديثة على التكنولوجيا مثل <strong>OAE</strong> (الموجات الانبعاثية) و <strong>ABR</strong> (استجابة جذع المخ).<br><br><strong>القاعدة الذهبية (1 - 3 - 6):</strong><ul><li><strong>عمر شهر:</strong> إجراء مسح سمعي.</li><li><strong>عمر 3 أشهر:</strong> تشخيص نهائي إذا فشل المسح.</li><li><strong>عمر 6 أشهر:</strong> البدء في التدخل (سماعات أو تأهيل).</li></ul><hr><h4 class='text-primary mb-3'>سبل الوقاية وتجنب المخاطر</h4><ul><li><strong>قبل الزواج:</strong> الفحص الوراثي (خصوصاً زواج الأقارب).</li><li><strong>أثناء الحمل:</strong> الامتناع عن الأدوية والمضادات الحيوية دون استشارة طبيب الأجنة.</li><li><strong>حماية أذن الطفل:</strong> عدم استخدام &quot;أعواد القطن&quot; إطلاقاً لتنظيف أذن الطفل.</li></ul><hr><h4 class='text-primary mb-3'>جهود الكشف المبكر في مصر 🇪🇬</h4>تم فحص أكثر من 9.7 مليون طفل ضمن المبادرات الرئاسية، مع تدريب الكوادر وتسجيل البيانات إلكترونياً وتوفير قوافل طبية بجميع المحافظات.`,
+                      )
+                    "
+                  >
+                    الكشف المبكر عن الإعاقة السمعية
+                  </h5>
+                  <p class="card-text text-secondary">
+                    دليلك الشامل لمعرفة الفرق بين المسح والتشخيص، ومستويات ضعف
+                    السمع، والقاعدة الذهبية (1-3-6) لحماية طفلك...
+                  </p>
+                </div>
+                <div class="card-footer bg-white border-0 pb-3 pt-0">
+                  <button
+                    onclick="
+                      this.parentElement.previousElementSibling
+                        .querySelector('.clickable-title')
+                        .click()
+                    "
+                    class="btn btn-outline-primary btn-sm w-100 rounded-pill"
+                  >
+                    اقرأ المزيد
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div
+                class="card article-card h-100 border-0 shadow-sm rounded-4 overflow-hidden"
+              >
+                <img
+                  src="images/p5.jpg"
+                  class="card-img-top"
+                  alt="التدخل المبكر لذوي الإعاقة السمعية"
+                  onclick="
+                    showArticle(
+                      'الدليل الشامل: التدخل المبكر لذوي الإعاقة السمعية',
+                      `<h4 class='text-primary mb-3'>ما هو التدخل المبكر؟</h4>هو مجموعة من الخدمات الطبية، التربوية، التأهيلية، والنفسية التي تُقَدَّم للطفل منذ لحظة اكتشاف الإعاقة وحتى سن 5-6 سنوات. <br><strong>الهدف:</strong> تقليل آثار فقدان السمع على النمو اللغوي والعقلي والاجتماعي.<br><em>ملاحظة هامة:</em> التدخل المبكر ليس مجرد جلسة تخاطب أسبوعية، بل هو برنامج متكامل طويل المدى تشترك فيه الأسرة والمدرسة والفريق الطبي.<hr><h4 class='text-primary mb-3'>لماذا التدخل المبكر مهم جداً؟</h4><ul><li><strong>السمع هو بوابة اللغة:</strong> الطفل يكتسب اللغة بتقليد ما يسمعه. بدون تدخل، يتأخر الكلام ويضعف الفهم.</li><li><strong>الفترة الذهبية (أول 3 سنوات):</strong> الدماغ يكون في أعلى مرونة عصبية. كل شهر تأخير يعني خسارة لغوية يصعب تعويضها.</li><li><strong>منع المشكلات الثانوية:</strong> ضعف السمع بدون تدخل يؤدي إلى عناد، عدوانية، انسحاب، وصعوبات تعلم.</li></ul><hr><h4 class='text-primary mb-3'>أنواع الإعاقة السمعية</h4><ul><li><strong>توصيلية:</strong> خلل في الأذن الخارجية أو الوسطى (غالباً يُعالج طبياً وتتحسن اللغة بسرعة).</li><li><strong>حسية عصبية:</strong> خلل في القوقعة أو العصب السمعي (تؤدي لتأخر لغوي واضح وتحتاج تدخلاً مكثفاً).</li><li><strong>مختلطة:</strong> مزيج بين النوعين السابقين.</li></ul><hr><h4 class='text-primary mb-3'>دور الأسرة (حجر الأساس)</h4>الطفل يقضي 90% من وقته مع الأسرة. لذلك، الأسرة ليست عنصراً مساعداً بل <strong>جزء أساسي من الخطة العلاجية</strong>. دورها يشمل:<ul><li>تقبل التشخيص وعدم التأجيل.</li><li>الالتزام بارتداء الأجهزة السمعية يومياً.</li><li>تحويل الأنشطة اليومية (أكل، لبس، لعب) لفرص تدريب لغوي مستمر.</li><li>نقل الملاحظات الدقيقة للأخصائي.</li></ul><hr><h4 class='text-primary mb-3'>الأجهزة التعويضية (سماعات / قوقعة)</h4>الجهاز ال 'يعالج' السمع، بل يخلق فرصة للتعلم. <br><strong>حقيقة علمية:</strong> الجهاز = مدخل صوت. أما التأهيل = تعليم الدماغ ماذا يفعل بهذا الصوت. بدون تأهيل، الطفل يسمع أصواتاً مبهمة لا يفهم معناها.<hr><h4 class='text-primary mb-3'>مراحل التأهيل السمعي بعد التركيب</h4><ol><li><strong>الوعي بالصوت:</strong> إدراك وجود الصوت (الالتفات أو الانتباه).</li><li><strong>التمييز السمعي:</strong> التفريق بين الأصوات (عالي/منخفض، طويل/قصير).</li><li><strong>التعرف السمعي:</strong> ربط الصوت بمعناه (الإشارة للشيء عند سماع اسمه).</li><li><strong>الفهم السمعي:</strong> فهم الكلام بدون دعم بصري (تنفيذ الأوامر).</li><li><strong>التعبير اللغوي:</strong> استخدام ما يسمعه في الكلام والتواصل الحقيقي.</li></ol><hr><h4 class='text-primary mb-3'>الدمج التعليمي والسلوك</h4>الطفل المتدخل مبكراً يكون أكثر قدرة على فهم التعليمات الصفية والتفاعل مع الأقران، مما يقلل نوبات الغضب والإحباط الناتجة عن عدم الفهم. التدخل المبكر هو العامل الحاسم في نجاح الدمج المدرسي.<hr><h4 class='text-primary mb-3'>الخلاصة من دراسات الحالة</h4>قصص النجاح ليست معجزات، بل هي نتيجة <strong>اكتشاف مبكر + جهاز مناسب + تأهيل مستمر + أسرة ملتزمة ومشاركة</strong>.`,
+                    )
+                  "
+                />
+                <div class="card-body">
+                  <h5
+                    class="card-title fw-bold text-dark clickable-title"
+                    onclick="
+                      showArticle(
+                        'الدليل الشامل: التدخل المبكر لذوي الإعاقة السمعية',
+                        `<h4 class='text-primary mb-3'>ما هو التدخل المبكر؟</h4>هو مجموعة من الخدمات الطبية، التربوية، التأهيلية، والنفسية التي تُقَدَّم للطفل منذ لحظة اكتشاف الإعاقة وحتى سن 5-6 سنوات. <br><strong>الهدف:</strong> تقليل آثار فقدان السمع على النمو اللغوي والعقلي والاجتماعي.<br><em>ملاحظة هامة:</em> التدخل المبكر ليس مجرد جلسة تخاطب أسبوعية، بل هو برنامج متكامل طويل المدى تشترك فيه الأسرة والمدرسة والفريق الطبي.<hr><h4 class='text-primary mb-3'>لماذا التدخل المبكر مهم جداً؟</h4><ul><li><strong>السمع هو بوابة اللغة:</strong> الطفل يكتسب اللغة بتقليد ما يسمعه. بدون تدخل، يتأخر الكلام ويضعف الفهم.</li><li><strong>الفترة الذهبية (أول 3 سنوات):</strong> الدماغ يكون في أعلى مرونة عصبية. كل شهر تأخير يعني خسارة لغوية يصعب تعويضها.</li><li><strong>منع المشكلات الثانوية:</strong> ضعف السمع بدون تدخل يؤدي إلى عناد، عدوانية، انسحاب، وصعوبات تعلم.</li></ul><hr><h4 class='text-primary mb-3'>أنواع الإعاقة السمعية</h4><ul><li><strong>توصيلية:</strong> خلل في الأذن الخارجية أو الوسطى (غالباً يُعالج طبياً وتتحسن اللغة بسرعة).</li><li><strong>حسية عصبية:</strong> خلل في القوقعة أو العصب السمعي (تؤدي لتأخر لغوي واضح وتحتاج تدخلاً مكثفاً).</li><li><strong>مختلطة:</strong> مزيج بين النوعين السابقين.</li></ul><hr><h4 class='text-primary mb-3'>دور الأسرة (حجر الأساس)</h4>الطفل يقضي 90% من وقته مع الأسرة. لذلك، الأسرة ليست عنصراً مساعداً بل <strong>جزء أساسي من الخطة العلاجية</strong>. دورها يشمل:<ul><li>تقبل التشخيص وعدم التأجيل.</li><li>الالتزام بارتداء الأجهزة السمعية يومياً.</li><li>تحويل الأنشطة اليومية (أكل، لبس، لعب) لفرص تدريب لغوي مستمر.</li><li>نقل الملاحظات الدقيقة للأخصائي.</li></ul><hr><h4 class='text-primary mb-3'>الأجهزة التعويضية (سماعات / قوقعة)</h4>الجهاز ال 'يعالج' السمع، بل يخلق فرصة للتعلم. <br><strong>حقيقة علمية:</strong> الجهاز = مدخل صوت. أما التأهيل = تعليم الدماغ ماذا يفعل بهذا الصوت. بدون تأهيل، الطفل يسمع أصواتاً مبهمة لا يفهم معناها.<hr><h4 class='text-primary mb-3'>مراحل التأهيل السمعي بعد التركيب</h4><ol><li><strong>الوعي بالصوت:</strong> إدراك وجود الصوت (الالتفات أو الانتباه).</li><li><strong>التمييز السمعي:</strong> التفريق بين الأصوات (عالي/منخفض، طويل/قصير).</li><li><strong>التعرف السمعي:</strong> ربط الصوت بمعناه (الإشارة للشيء عند سماع اسمه).</li><li><strong>الفهم السمعي:</strong> فهم الكلام بدون دعم بصري (تنفيذ الأوامر).</li><li><strong>التعبير اللغوي:</strong> استخدام ما يسمعه في الكلام والتواصل الحقيقي.</li></ol><hr><h4 class='text-primary mb-3'>الدمج التعليمي والسلوك</h4>الطفل المتدخل مبكراً يكون أكثر قدرة على فهم التعليمات الصفية والتفاعل مع الأقران، مما يقلل نوبات الغضب والإحباط الناتجة عن عدم الفهم. التدخل المبكر هو العامل الحاسم في نجاح الدمج المدرسي.<hr><h4 class='text-primary mb-3'>الخلاصة من دراسات الحالة</h4>قصص النجاح ليست معجزات، بل هي نتيجة <strong>اكتشاف مبكر + جهاز مناسب + تأهيل مستمر + أسرة ملتزمة ومشاركة</strong>.`,
+                      )
+                    "
+                  >
+                    الدليل الشامل للتدخل المبكر
+                  </h5>
+                  <p class="card-text text-secondary">
+                    كل ما يهمك معرفته عن التدخل المبكر، الأجهزة التعويضية، مراحل
+                    التأهيل اللغوي، ودور الأسرة الحاسم في نجاح طفلها...
+                  </p>
+                </div>
+                <div class="card-footer bg-white border-0 pb-3 pt-0">
+                  <button
+                    onclick="
+                      this.parentElement.previousElementSibling
+                        .querySelector('.clickable-title')
+                        .click()
+                    "
+                    class="btn btn-outline-primary btn-sm w-100 rounded-pill"
+                  >
+                    اقرأ المزيد
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <div id="page-kids" style="display: none">
+      <main class="container my-5">
+        <header class="text-center mb-5 p-5 kids-header shadow-sm">
+          <h1 class="display-4 fw-bold text-dark mb-3">
+            🎈 عالم الأطفال الممتع 🎨
+          </h1>
+          <p class="lead text-dark fw-semibold fs-4">
+            هيا بنا نتعلم لغة الإشارة ونستمتع بالقصص والأغاني معاً! ✨
+          </p>
+        </header>
+
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4">
+            <div
+              class="card kid-video-card card-blue h-100 overflow-hidden"
+              onclick="openVideoModal('عائلتي الجميلة 👨‍👩‍👧‍👦', 'Videos/one_v.mp4')"
+            >
+              <div class="video-thumbnail-container">
+                <img
+                  src="images/1.jpg"
+                  class="card-img-top w-100"
+                  alt="الأسرة"
+                />
+                <div class="play-overlay">▶</div>
+              </div>
+              <div class="card-body text-center">
+                <h4 class="card-title fw-bold text-dark mb-2">
+                  عائلتي الجميلة 👨‍👩‍👧‍👦
+                </h4>
+                <p class="card-text text-secondary">
+                  تعالوا نتعرف على إشارات بابا وماما وإخواتي وكل العائلة!
+                </p>
+              </div>
+              <div class="card-footer bg-white border-0 pb-3 text-center">
+                <button class="btn btn-info btn-kid text-white w-75">
+                  يلا نشوف! 🍿
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div
+              class="card kid-video-card card-pink h-100 overflow-hidden"
+              onclick="openVideoModal('أهلاً يا أصدقاء 👋', 'Videos/two_v.mp4')"
+            >
+              <div class="video-thumbnail-container">
+                <img
+                  src="images/2.jpg"
+                  class="card-img-top w-100"
+                  alt="التعارف"
+                />
+                <div class="play-overlay">▶</div>
+              </div>
+              <div class="card-body text-center">
+                <h4 class="card-title fw-bold text-dark mb-2">
+                  أهلاً يا أصدقاء 👋
+                </h4>
+                <p class="card-text text-secondary">
+                  كيف نقول "مرحباً" و"كيف حالك" ونتعرف على أصدقاء جدد؟
+                </p>
+              </div>
+              <div class="card-footer bg-white border-0 pb-3 text-center">
+                <button class="btn btn-danger btn-kid text-white w-75">
+                  يلا نشوف! 🍿
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div
+              class="card kid-video-card card-green h-100 overflow-hidden"
+              onclick="
+                openVideoModal('كلمات كل يوم (1) 🌟', 'Videos/three_v.mp4')
+              "
+            >
+              <div class="video-thumbnail-container">
+                <img
+                  src="images/3.jpg"
+                  class="card-img-top w-100"
+                  alt="كلمات عامة 1"
+                />
+                <div class="play-overlay">▶</div>
+              </div>
+              <div class="card-body text-center">
+                <h4 class="card-title fw-bold text-dark mb-2">
+                  كلمات كل يوم (1) 🌟
+                </h4>
+                <p class="card-text text-secondary">
+                  إشارات بسيطة ومهمة بنستخدمها كل يوم في حياتنا.
+                </p>
+              </div>
+              <div class="card-footer bg-white border-0 pb-3 text-center">
+                <button class="btn btn-success btn-kid text-white w-75">
+                  يلا نشوف! 🍿
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div
+              class="card kid-video-card card-orange h-100 overflow-hidden"
+              onclick="
+                openVideoModal('كلمات كل يوم (2) ✨', 'Videos/four_v.mp4')
+              "
+            >
+              <div class="video-thumbnail-container">
+                <img
+                  src="images/4.jpg"
+                  class="card-img-top w-100"
+                  alt="كلمات عامة 2"
+                />
+                <div class="play-overlay">▶</div>
+              </div>
+              <div class="card-body text-center">
+                <h4 class="card-title fw-bold text-dark mb-2">
+                  كلمات كل يوم (2) ✨
+                </h4>
+                <p class="card-text text-secondary">
+                  يلا نكمل رحلتنا ونتعلم كلمات جديدة ومفيدة مع بعض!
+                </p>
+              </div>
+              <div class="card-footer bg-white border-0 pb-3 text-center">
+                <button class="btn btn-warning btn-kid text-dark w-75">
+                  يلا نشوف! 🍿
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div
+              class="card kid-video-card card-blue h-100 overflow-hidden"
+              onclick="openVideoModal('بيتي الصغير 🏠', 'Videos/five_v.mp4')"
+            >
+              <div class="video-thumbnail-container">
+                <img
+                  src="images/5.jpg"
+                  class="card-img-top w-100"
+                  alt="المنزل"
+                />
+                <div class="play-overlay">▶</div>
+              </div>
+              <div class="card-body text-center">
+                <h4 class="card-title fw-bold text-dark mb-2">
+                  بيتي الصغير 🏠
+                </h4>
+                <p class="card-text text-secondary">
+                  سرير، باب، شباك.. تعالوا نعرف إشارات الأشياء جوه بيتنا.
+                </p>
+              </div>
+              <div class="card-footer bg-white border-0 pb-3 text-center">
+                <button class="btn btn-info btn-kid text-white w-75">
+                  يلا نشوف! 🍿
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div
+              class="card kid-video-card card-pink h-100 overflow-hidden"
+              onclick="openVideoModal('أيامنا الحلوة 📅', 'Videos/six_v.mp4')"
+            >
+              <div class="video-thumbnail-container">
+                <img
+                  src="images/6.jpg"
+                  class="card-img-top w-100"
+                  alt="أيام الأسبوع"
+                />
+                <div class="play-overlay">▶</div>
+              </div>
+              <div class="card-body text-center">
+                <h4 class="card-title fw-bold text-dark mb-2">
+                  أيامنا الحلوة 📅
+                </h4>
+                <p class="card-text text-secondary">
+                  من السبت للجمعة.. نتعلم أيام الأسبوع السبعة بكل سهولة.
+                </p>
+              </div>
+              <div class="card-footer bg-white border-0 pb-3 text-center">
+                <button class="btn btn-danger btn-kid text-white w-75">
+                  يلا نشوف! 🍿
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div
+              class="card kid-video-card card-green h-100 overflow-hidden"
+              onclick="openVideoModal('أنا بطل قوي 💪', 'Videos/seven_v.mp4')"
+            >
+              <div class="video-thumbnail-container">
+                <img
+                  src="images/7.jpg"
+                  class="card-img-top w-100"
+                  alt="الصحة"
+                />
+                <div class="play-overlay">▶</div>
+              </div>
+              <div class="card-body text-center">
+                <h4 class="card-title fw-bold text-dark mb-2">
+                  أنا بطل قوي 💪
+                </h4>
+                <p class="card-text text-secondary">
+                  إزاي نعبر عن صحتنا ونقول إننا حاسين بإيه لو تعبنا شوية.
+                </p>
+              </div>
+              <div class="card-footer bg-white border-0 pb-3 text-center">
+                <button class="btn btn-success btn-kid text-white w-75">
+                  يلا نشوف! 🍿
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div
+              class="card kid-video-card card-orange h-100 overflow-hidden"
+              onclick="
+                openVideoModal('يلا نلعب ونتحرك 🏃‍♂️', 'Videos/eight_v.mp4')
+              "
+            >
+              <div class="video-thumbnail-container">
+                <img
+                  src="images/8.jpg"
+                  class="card-img-top w-100"
+                  alt="الأفعال"
+                />
+                <div class="play-overlay">▶</div>
+              </div>
+              <div class="card-body text-center">
+                <h4 class="card-title fw-bold text-dark mb-2">
+                  يلا نلعب ونتحرك 🏃‍♂️
+                </h4>
+                <p class="card-text text-secondary">
+                  يأكل، يشرب، يلعب.. تعالوا نتعلم إشارات الحركة والأفعال.
+                </p>
+              </div>
+              <div class="card-footer bg-white border-0 pb-3 text-center">
+                <button class="btn btn-warning btn-kid text-dark w-75">
+                  يلا نشوف! 🍿
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div
+              class="card kid-video-card card-blue h-100 overflow-hidden"
+              onclick="openVideoModal('عالم الألوان 🎨', 'Videos/nine_v.mp4')"
+            >
+              <div class="video-thumbnail-container">
+                <img
+                  src="images/9.jpg"
+                  class="card-img-top w-100"
+                  alt="الألوان"
+                />
+                <div class="play-overlay">▶</div>
+              </div>
+              <div class="card-body text-center">
+                <h4 class="card-title fw-bold text-dark mb-2">
+                  عالم الألوان 🎨
+                </h4>
+                <p class="card-text text-secondary">
+                  أحمر، أزرق، أخضر.. يلا نلون دنيتنا بأجمل الإشارات!
+                </p>
+              </div>
+              <div class="card-footer bg-white border-0 pb-3 text-center">
+                <button class="btn btn-info btn-kid text-white w-75">
+                  يلا نشوف! 🍿
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div
+              class="card kid-video-card card-pink h-100 overflow-hidden"
+              onclick="openVideoModal('يلا نعد سوا 🔢', 'Videos/ten_v.mp4')"
+            >
+              <div class="video-thumbnail-container">
+                <img
+                  src="images/10.jpg"
+                  class="card-img-top w-100"
+                  alt="الأرقام"
+                />
+                <div class="play-overlay">▶</div>
+              </div>
+              <div class="card-body text-center">
+                <h4 class="card-title fw-bold text-dark mb-2">
+                  يلا نعد سوا 🔢
+                </h4>
+                <p class="card-text text-secondary">
+                  واحد، اتنين، تلاتة.. أرقامنا سهلة وممتعة جداً.
+                </p>
+              </div>
+              <div class="card-footer bg-white border-0 pb-3 text-center">
+                <button class="btn btn-danger btn-kid text-white w-75">
+                  يلا نشوف! 🍿
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div
+              class="card kid-video-card card-green h-100 overflow-hidden"
+              onclick="openVideoModal('حروفنا الشقية 🔤', 'Videos/11_v.mp4')"
+            >
+              <div class="video-thumbnail-container">
+                <img
+                  src="images/11.jpg"
+                  class="card-img-top w-100"
+                  alt="الحروف العربية"
+                />
+                <div class="play-overlay">▶</div>
+              </div>
+              <div class="card-body text-center">
+                <h4 class="card-title fw-bold text-dark mb-2">
+                  حروفنا الشقية 🔤
+                </h4>
+                <p class="card-text text-secondary">
+                  من الألف للياء.. هيا نتعلم الحروف الأبجدية بلغة الإشارة.
+                </p>
+              </div>
+              <div class="card-footer bg-white border-0 pb-3 text-center">
+                <button class="btn btn-success btn-kid text-white w-75">
+                  يلا نشوف! 🍿
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div
+              class="card kid-video-card card-orange h-100 overflow-hidden"
+              onclick="openVideoModal('يلا نخرج 🌳', 'Videos/12_v.mp4')"
+            >
+              <div class="video-thumbnail-container">
+                <img
+                  src="images/12.jpg"
+                  class="card-img-top w-100"
+                  alt="أماكن عامة"
+                />
+                <div class="play-overlay">▶</div>
+              </div>
+              <div class="card-body text-center">
+                <h4 class="card-title fw-bold text-dark mb-2">يلا نخرج 🌳</h4>
+                <p class="card-text text-secondary">
+                  مدرسة، حديقة، مستشفى.. إشارات الأماكن اللي بنروحها.
+                </p>
+              </div>
+              <div class="card-footer bg-white border-0 pb-3 text-center">
+                <button class="btn btn-warning btn-kid text-dark w-75">
+                  يلا نشوف! 🍿
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div
+              class="card kid-video-card card-blue h-100 overflow-hidden"
+              onclick="openVideoModal('مدينتي الزقازيق 🏙️', 'Videos/13_v.mp4')"
+            >
+              <div class="video-thumbnail-container">
+                <img
+                  src="images/13.jpg"
+                  class="card-img-top w-100"
+                  alt="أماكن في الزقازيق"
+                />
+                <div class="play-overlay">▶</div>
+              </div>
+              <div class="card-body text-center">
+                <h4 class="card-title fw-bold text-dark mb-2">
+                  مدينتي الزقازيق 🏙️
+                </h4>
+                <p class="card-text text-secondary">
+                  جولة ممتعة نتعلم فيها إشارات أشهر الأماكن في مدينتنا الحلوة!
+                </p>
+              </div>
+              <div class="card-footer bg-white border-0 pb-3 text-center">
+                <button class="btn btn-info btn-kid text-white w-75">
+                  يلا نشوف! 🍿
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div
+              class="card kid-video-card card-pink h-100 overflow-hidden"
+              onclick="
+                openVideoModal('بيب بيب.. توت توت 🚗', 'Videos/14_v.mp4')
+              "
+            >
+              <div class="video-thumbnail-container">
+                <img
+                  src="images/14.jpg"
+                  class="card-img-top w-100"
+                  alt="الطرق والمواصلات"
+                />
+                <div class="play-overlay">▶</div>
+              </div>
+              <div class="card-body text-center">
+                <h4 class="card-title fw-bold text-dark mb-2">
+                  بيب بيب.. توت توت 🚗
+                </h4>
+                <p class="card-text text-secondary">
+                  عربية، قطار، طيارة.. تعالوا نعرف إشارات وسائل المواصلات.
+                </p>
+              </div>
+              <div class="card-footer bg-white border-0 pb-3 text-center">
+                <button class="btn btn-danger btn-kid text-white w-75">
+                  يلا نشوف! 🍿
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div
+              class="card kid-video-card card-green h-100 overflow-hidden"
+              onclick="openVideoModal('كبير وصغير 🐘🐁', 'Videos/15_v.mp4')"
+            >
+              <div class="video-thumbnail-container">
+                <img
+                  src="images/15.jpg"
+                  class="card-img-top w-100"
+                  alt="الصفات"
+                />
+                <div class="play-overlay">▶</div>
+              </div>
+              <div class="card-body text-center">
+                <h4 class="card-title fw-bold text-dark mb-2">
+                  كبير وصغير 🐘🐁
+                </h4>
+                <p class="card-text text-secondary">
+                  طويل ولا قصير؟ سريع ولا بطيء؟ يلا نتعلم نوصف الأشياء.
+                </p>
+              </div>
+              <div class="card-footer bg-white border-0 pb-3 text-center">
+                <button class="btn btn-success btn-kid text-white w-75">
+                  يلا نشوف! 🍿
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div
+              class="card kid-video-card card-orange h-100 overflow-hidden"
+              onclick="openVideoModal('بلدي مصر 🇪🇬', 'Videos/16_v.mp4')"
+            >
+              <div class="video-thumbnail-container">
+                <img
+                  src="images/16.jpg"
+                  class="card-img-top w-100"
+                  alt="المحافظات"
+                />
+                <div class="play-overlay">▶</div>
+              </div>
+              <div class="card-body text-center">
+                <h4 class="card-title fw-bold text-dark mb-2">بلدي مصر 🇪🇬</h4>
+                <p class="card-text text-secondary">
+                  الإسكندرية، أسوان، وغيرها.. يلا نزور محافظات مصر بالإشارة.
+                </p>
+              </div>
+              <div class="card-footer bg-white border-0 pb-3 text-center">
+                <button class="btn btn-warning btn-kid text-dark w-75">
+                  يلا نشوف! 🍿
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div
+              class="card kid-video-card card-blue h-100 overflow-hidden"
+              onclick="openVideoModal('أعيادنا فرحة 🎈', 'Videos/17_v.mp4')"
+            >
+              <div class="video-thumbnail-container">
+                <img
+                  src="images/17.jpg"
+                  class="card-img-top w-100"
+                  alt="الأعياد"
+                />
+                <div class="play-overlay">▶</div>
+              </div>
+              <div class="card-body text-center">
+                <h4 class="card-title fw-bold text-dark mb-2">
+                  أعيادنا فرحة 🎈
+                </h4>
+                <p class="card-text text-secondary">
+                  كل سنة وأنتم طيبين! تعالوا نتعلم إشارات العيد والاحتفالات.
+                </p>
+              </div>
+              <div class="card-footer bg-white border-0 pb-3 text-center">
+                <button class="btn btn-info btn-kid text-white w-75">
+                  يلا نشوف! 🍿
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div
+              class="card kid-video-card card-pink h-100 overflow-hidden"
+              onclick="openVideoModal('مدرستي الجميلة 🎒', 'Videos/18_v.mp4')"
+            >
+              <div class="video-thumbnail-container">
+                <img
+                  src="images/18.jpg"
+                  class="card-img-top w-100"
+                  alt="التعليم والمدرسة"
+                />
+                <div class="play-overlay">▶</div>
+              </div>
+              <div class="card-body text-center">
+                <h4 class="card-title fw-bold text-dark mb-2">
+                  مدرستي الجميلة 🎒
+                </h4>
+                <p class="card-text text-secondary">
+                  قلم، كتاب، مدرسة.. تعالوا نتعلم إشارات أدوات المدرسة والتعليم
+                  بطريقة ممتعة.
+                </p>
+              </div>
+              <div class="card-footer bg-white border-0 pb-3 text-center">
+                <button class="btn btn-danger btn-kid text-white w-75">
+                  يلا نشوف! 🍿
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <div id="page-centers" style="display: none">
+      <main class="container my-5">
+        <header class="text-center mb-5 p-4 bg-white rounded-4 shadow-sm">
+          <h1 class="display-5 fw-bold text-primary mb-3">
+            دليلك لأشهر مراكز السمعيات
+          </h1>
+          <p class="lead text-secondary w-75 mx-auto">
+            اختر محافظتك من القائمة بالأسفل للوصول إلى أقرب وأفضل المراكز
+            والعيادات المتخصصة في التقييم السمعي والتخاطب في جميع أنحاء مصر.
+          </p>
+        </header>
+
+        <div class="row justify-content-center mb-5">
+          <div class="col-md-8 col-lg-6">
+            <label
+              for="govSelect"
+              class="form-label fw-bold fs-5 text-dark mb-3"
+              >📍 اختر المحافظة:</label
+            >
+            <select id="govSelect" class="form-select" onchange="showCenters()">
+              <option value="none" selected disabled>
+                -- اضغط هنا لاختيار المحافظة --
+              </option>
+              <option value="cairo">القاهرة</option>
+              <option value="giza">الجيزة</option>
+              <option value="sharqia">الشرقية</option>
+              <option value="ismailia">الإسماعيلية</option>
+              <option value="dakahlia">الدقهلية</option>
+              <option value="assiut">أسيوط</option>
+              <option value="damietta">دمياط</option>
+              <option value="fayoum">الفيوم</option>
+              <option value="sohag">سوهاج</option>
+              <option value="luxor">الأقصر</option>
+              <option value="aswan">أسوان</option>
+              <option value="redsea">البحر الأحمر</option>
+              <option value="beheira">البحيرة</option>
+              <option value="benisuef">بني سويف</option>
+              <option value="portsaid">بورسعيد</option>
+              <option value="southsinai">جنوب سيناء</option>
+              <option value="alexandria">الإسكندرية</option>
+              <option value="suez">السويس</option>
+              <option value="northsinai">شمال سيناء</option>
+              <option value="gharbia">الغربية</option>
+              <option value="qalyubia">القليوبية</option>
+              <option value="qena">قنا</option>
+              <option value="kafr">كفر الشيخ</option>
+              <option value="matrouh">مطروح</option>
+              <option value="monufia">المنوفية</option>
+              <option value="minya">المنيا</option>
+              <option value="newvalley">الوادي الجديد</option>
+            </select>
+          </div>
+        </div>
+
+        <div id="centersContainer" class="row g-4">
+          <div class="col-12 text-center" id="initialMessage">
+            <p class="text-muted fs-5 mt-4">
+              يرجى اختيار المحافظة لعرض المراكز والعيادات المتاحة.
+            </p>
+            <img
+              src="images/logo.png"
+              class="rounded-4 mt-3 w-50 opacity-50"
+              alt="اختر المحافظة"
+            />
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <div
+      class="modal fade"
+      id="articleModal"
+      tabindex="-1"
+      aria-labelledby="articleModalLabel"
+      aria-hidden="true"
+    >
+      <div
+        class="modal-dialog modal-dialog-centered modal-lg modal-dialog-scrollable"
+      >
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title fw-bold text-primary" id="articleModalLabel">
+              عنوان المقال
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="إغلاق"
+            ></button>
+          </div>
+          <div
+            class="modal-body"
+            id="articleModalBody"
+            style="line-height: 1.8; font-size: 1.1rem"
+          ></div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              إغلاق
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="videoModal"
+      tabindex="-1"
+      aria-labelledby="videoModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div
+          class="modal-content"
+          style="
+            border-radius: 20px;
+            overflow: hidden;
+            border: 4px solid #1e90ff;
+          "
+        >
+          <div class="modal-header bg-white">
+            <h5
+              class="modal-title fw-bold fs-3 text-primary"
+              id="videoModalLabel"
+            >
+              عنوان الفيديو
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="إغلاق"
+            ></button>
+          </div>
+          <div class="modal-body p-0 bg-dark">
+            <div class="ratio ratio-16x9">
+              <video id="modalVideoPlayer" controls class="w-100 h-100 bg-dark">
+                <source src="" type="video/mp4" />
+                متصفحك لا يدعم تشغيل الفيديوهات.
+              </video>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="text-white pt-5 pb-3 mt-5 shadow-lg" id="main-footer">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-4 col-md-6">
+            <div class="d-flex align-items-center gap-2 mb-3">
+              <img
+                src="images/logo.svg"
+                alt="شعار تواصل"
+                class="rounded-circle bg-white p-1 ms-2"
+                style="width: 55px; height: 55px"
+              />
+              <h3 class="fw-bold mb-0 text-warning">تواصل</h3>
+            </div>
+            <p class="text-light opacity-75 fs-6 pe-lg-3">
+              دليلك الشامل لدعم ذوي الإعاقة السمعية. نهدف إلى مد جسور التواصل
+              بين العائلة والمجتمع لمستقبل أكثر إشراقاً.
+            </p>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <h5 class="fw-bold mb-4 text-info">أقسام الموقع</h5>
+            <ul class="list-unstyled">
+              <li class="mb-3">
+                <a
+                  href="#"
+                  onclick="
+                    switchPage('home');
+                    return false;
+                  "
+                  class="footer-link"
+                >
+                  <i class="bi bi-chevron-left small me-1"></i> الرئيسية
+                </a>
+              </li>
+              <li class="mb-3">
+                <a
+                  href="#"
+                  onclick="
+                    switchPage('parents');
+                    return false;
+                  "
+                  class="footer-link"
+                >
+                  <i class="bi bi-chevron-left small me-1"></i> التوجيه الأسري
+                  والمقالات
+                </a>
+              </li>
+              <li class="mb-3">
+                <a
+                  href="#"
+                  onclick="
+                    switchPage('kids');
+                    return false;
+                  "
+                  class="footer-link"
+                >
+                  <i class="bi bi-chevron-left small me-1"></i> عالم الأطفال
+                  الممتع
+                </a>
+              </li>
+              <li class="mb-3">
+                <a
+                  href="#"
+                  onclick="
+                    switchPage('centers');
+                    return false;
+                  "
+                  class="footer-link"
+                >
+                  <i class="bi bi-chevron-left small me-1"></i> دليل المراكز
+                  والعيادات
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-12">
+            <h5 class="fw-bold mb-4 text-info">تواصل معنا</h5>
+
+            <div class="mb-4">
+              <p class="mb-2 text-warning fw-semibold small">
+                فريق عمل الموقع:
+              </p>
+              <a
+                href="https://www.facebook.com/share/1GwcCNLVK6/"
+                target="_blank"
+                class="social-icon team-icon"
+                title="فيسبوك"
+                ><i class="bi bi-facebook"></i
+              ></a>
+              <a
+                href="https://wa.me/201140630846?text=السلام عليكم .."
+                target="_blank"
+                class="social-icon team-icon"
+                title="واتساب"
+                ><i class="bi bi-whatsapp"></i
+              ></a>
+              <a
+                href="https://www.instagram.com/unheard_impact?igsh=MWNkcTh6b3MwMWtxeQ=="
+                target="_blank"
+                class="social-icon team-icon"
+                title="إنستجرام"
+                ><i class="bi bi-instagram"></i
+              ></a>
+            </div>
+
+            <div>
+              <p class="mb-2 text-warning fw-semibold small">مطور الموقع:</p>
+              <a
+                href="https://www.facebook.com/abdallah.anwar.790454"
+                target="_blank"
+                class="social-icon dev-icon"
+                title="تواصل عبر الإيميل"
+                ><i class="bi bi-facebook"></i
+              ></a>
+              <a
+                href="https://wa.me/201111261218?text=السلام عليكم .."
+                target="_blank"
+                class="social-icon dev-icon"
+                title="واتساب"
+                ><i class="bi bi-whatsapp"></i
+              ></a>
+              <a
+                href="https://github.com/Abdallah-Anwar3"
+                target="_blank"
+                class="social-icon dev-icon"
+                title="جيت هب"
+                ><i class="bi bi-github"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/abdallah-anwar3/"
+                target="_blank"
+                class="social-icon dev-icon"
+                title="لينكد إن"
+                ><i class="bi bi-linkedin"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <hr class="mt-4 mb-3 border-info opacity-25" />
+
+        <div class="row align-items-center">
+          <div class="col-md-6 text-center text-md-end mb-2 mb-md-0">
+            <p class="mb-0 small opacity-75">
+              &copy; 2026 موقع <span class="fw-bold text-warning">تواصل</span>.
+              جميع الحقوق محفوظة.
+            </p>
+          </div>
+          <div class="col-md-6 text-center text-md-start">
+            <p class="mb-0 small opacity-75">
+              صُنع بحب <i class="bi bi-heart-fill text-danger mx-1"></i> لدعم
+              أبطالنا
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
